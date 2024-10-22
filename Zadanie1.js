@@ -36,7 +36,7 @@ function sumowanie_cen_napoji(napoje)
     let suma = 0;
     for(let i = 0;i<napoje.length; i++)
     {
-        suma = suma + napoje[i].cena;
+        suma += napoje[i].cena;
     }
     return suma;
 }
