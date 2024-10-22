@@ -36,3 +36,4 @@ console.log(Kontakty);
 console.log("Oto pierwszy i ostatni kontakt: ");
 console.log(Kontakty[0],Kontakty[3]);
 console.log("Oto dlugosc listy: ",Kontakty.length);
+console.log("1");
