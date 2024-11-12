@@ -6,12 +6,34 @@
 </head>
 <body>
 <script>
-    let liczba =prompt("Podaj liczbe: ");
-    if(liczba>90 && liczba <110)
-    {
-        alert("Bingo")
-    }
-    else{alert("Pudło")}
+    let a = parseFloat(prompt("Podaj a: "));
+    Number.isNaN(a);
+    let b = parseFloat(prompt("Podaj b: "));
+    Number.isNaN(b);
+    let znak = prompt("Podaj znak +, -, *, / ");
+        if(Number.isNaN(a)==false && Number.isNaN(a)==false)
+        {
+            switch(znak) {
+                case "+":
+                    alert("Wynik dzialania to: "+(a+b));
+                    break;
+                case "-":
+                    alert("Wynik dzialania to: "+(a-b));
+                    break;
+                case "*":
+                    alert("Wynik dzialania to: "+(a*b));
+                    break;
+                case "/":
+                    alert("Wynik dzialania to: "+(a/b));
+                    break;
+            }
+        }
+        else
+        {
+            alert("a lub b nie jest liczba!");
+        }
+
+
 </script>
 </body>
 </html>
